@@ -17,6 +17,3 @@ export default function NavComponent(){
         </ul>
     );
 }
-
-
-// houdaelgasbi@gmail.com
