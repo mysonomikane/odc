@@ -5,10 +5,13 @@ const Movie = (props) => {
     const {title, year, poster} = props;
    
     return (
-        <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-1 items-center justify-centers">
-            <a href="https://orange.ma">
-                <img className="rounded-t-lg" src={poster} alt="" />
-            </a>-
+        <div className="flex-col lg:w-64 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-1">
+            <div className='w-full lg:h-80 overflow-hidden flex flex-wrap content-around hover:content-start'>
+                <a href="https://orange.ma">
+                    <img className="rounded-t-lg" src={poster} alt="" />
+                </a>
+            </div>
+
             <div className="p-5">
                 <a href="https://orange.ma">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{year} - {title}</h5>

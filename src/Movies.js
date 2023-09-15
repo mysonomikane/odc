@@ -55,9 +55,9 @@ export default function Movies(props) {
     return (
         <div className='m-10'>
             <div className="container">
-                <div class="grid grid-cols-1 gap-0 md:grid-cols-4 md:gap-4 content-center">
+                <div class="flex flex-wrap justify-center">
                     {movies.map((movie)=>(
-                        <div><Movie title={movie.title} year={movie.year} poster={movie.poster} /></div>
+                        <Movie title={movie.title} year={movie.year} poster={movie.poster} />
                     ))}
                 </div>
             </div>

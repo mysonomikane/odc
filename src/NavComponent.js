@@ -1,4 +1,5 @@
 import {FaHome, FaFacebookF, FaTwitter, FaEnvelope} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function NavComponent(){
     const items = [{label:"Home", icon:<FaHome />}, {label:"facebook", icon:<FaFacebookF />}, {label:"twitter", icon:<FaTwitter />} , {label:"Contact", icon:<FaEnvelope />}];
@@ -14,6 +15,9 @@ export default function NavComponent(){
             {items.map((item)=>(
                 <li><a href="#" className="group">{item.icon} <span className="hidden group-hover:inline-block">{item.label}</span></a></li>
             ))}
+            <Link to="/" className="group">Home</Link>
+            <Link to="/about" className="group">About</Link>
+            <Link to="/contact" className="group">Contact</Link>
         </ul>
     );
 }
